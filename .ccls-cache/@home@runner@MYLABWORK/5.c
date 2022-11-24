@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int asdasdsa() 
+int maasdasd() 
 {
-    int n,first;
-    printf("Enter the number: ");
-    scanf("%d",&n);
-    while(n>0)
-    {
-        first=n%10;
-        n=n/10;
-    }
-    printf("%d",first);
+    int n,first; // Обьявляем две переменные, тип int
+    printf("Введите число: "); // Выводим сообщение на экран
+    scanf("%d",&n); // Записываем введенное значение в переменную n
+    do { // Цикл с постусловием do - while
+      first=n%10; // Присваиваем значение переменной 
+      n=n/10; // Присваиваем значение переменной
+    } while(n>0); // Условие
+    
+    printf("Первое число в строке: %d\n",first); // Выводим сообщение на экран
     return 0;
 }
